@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ %{DOCUMENT_ROOT}/redirect/index.php?q=$1 [QSA,L]
+</IfModule>
